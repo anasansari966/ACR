@@ -1,0 +1,6 @@
+.env
+ACR_DEBUG_LOG.log
+__pycache__
+__pycache__/*
+.venv
+venv

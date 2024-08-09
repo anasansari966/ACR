@@ -1,0 +1,590 @@
+2024-08-08 11:45:59.698 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 11:46:04.816 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 11:47:11.843 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 11:52:36.157 | INFO     | main:connect_db:46 - Connecting to database
+2024-08-08 11:52:36.759 | INFO     | main:connect_db:48 - Connected to database
+2024-08-08 11:55:38.712 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Query: With context to patient id 4: Update details in ssep by setting Neck_Electrode, Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops to Electrode F, 0, 0, 0, 0, 0, 0.
+2024-08-08 11:55:42.246 | DEBUG    | main:validate:101 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F', Upper_Cortical = 0, Upper_Subcortical = 0, ERBS = 0, Lower_Cortical = 0, Lower_Subcortical = 0, Pops = 0 WHERE patient_id = 4"]
+2024-08-08 11:55:42.272 | DEBUG    | api:insert_patient:194 - 'RunnableLambda' object is not callable
+2024-08-08 11:55:42.272 | INFO     | api:insert_patient:195 - Reconnecting DB
+2024-08-08 11:56:49.910 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Update details in ssep by setting Neck_Electrode to Electrode F, Upper_Cortical to 0, Upper_Subcortical to 0, ERBS to 0, Lower_Cortical to 0, Lower_Subcortical to 0, and Pops to 0.
+2024-08-08 11:56:54.420 | DEBUG    | main:validate:101 - ["UPDATE case_setup_ssep SET      Neck_Electrode = 'Electrode F',     Upper_Cortical = 0,     Upper_Subcortical = 0,     ERBS = 0,     Lower_Cortical = 0,     Lower_Subcortical = 0,     Pops = 0 WHERE patient_id = 4"]
+2024-08-08 11:56:54.443 | DEBUG    | api:insert_patient:194 - 'RunnableLambda' object is not callable
+2024-08-08 11:56:54.443 | INFO     | api:insert_patient:195 - Reconnecting DB
+2024-08-08 12:34:16.679 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 12:34:46.077 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 12:35:11.443 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 12:35:16.197 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 12:36:02.718 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 12:36:03.202 | INFO     | main:connect_db:49 - Connected to database
+2024-08-08 12:38:09.754 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Update the info in SSEP for the following details - Neck_Electrode: Electrode F, Upper_Cortical: 0, Upper_Subcortical: 0, ERBS: 0, Lower_Cortical: 0, Lower_Subcortical: 0, Pops: 0
+2024-08-08 12:38:12.490 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F', Upper_Cortical = 0, Upper_Subcortical = 0, ERBS = 0, Lower_Cortical = 0, Lower_Subcortical = 0, Pops = 0 WHERE patient_id = 4"]
+2024-08-08 12:38:12.690 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:38:12.691 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:38:12.691 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:40:27.994 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Please update the SSEP dataset with the following parameters: set Neck_Electrode to Electrode F, Upper_Cortical to 0, Upper_Subcortical to 0, ERBS to 0, Lower_Cortical to 0, Lower_Subcortical to 0, and Pops to 0. Ensure all values are accurately reflected in the dataset.
+2024-08-08 12:40:30.653 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4"]
+2024-08-08 12:40:30.673 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:40:30.674 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:40:30.674 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:40:39.494 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Please update the SSEP dataset with the following parameters: set Neck_Electrode to Electrode F, Upper_Cortical to 0, Upper_Subcortical to 0, ERBS to 0, Lower_Cortical to 0, Lower_Subcortical to 0, and Pops to 0. Ensure all values are accurately reflected in the dataset.
+2024-08-08 12:40:42.859 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F', Upper_Cortical = 0, Upper_Subcortical = 0, ERBS = 0, Lower_Cortical = 0, Lower_Subcortical = 0, Pops = 0 WHERE patient_id = 4"]
+2024-08-08 12:40:42.944 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:40:42.945 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:40:42.945 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:40:49.451 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: I need to modify the SSEP records. Update the Neck_Electrode field to Electrode F, and set the following fields to 0: Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops. Please confirm that these updates are implemented correctly.
+2024-08-08 12:40:52.339 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4"]
+2024-08-08 12:40:52.357 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:40:52.357 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:40:52.357 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:40:58.712 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: I need to modify the SSEP records. Update the Neck_Electrode field to Electrode F, and set the following fields to 0: Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops. Please confirm that these updates are implemented correctly.
+2024-08-08 12:41:02.011 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4"]
+2024-08-08 12:41:02.033 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:41:02.034 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:41:02.034 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:41:27.705 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Update the SSEP information as follows: assign Electrode F to Neck_Electrode and 0 to the fields Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops. Verify that these changes are made in the dataset.
+2024-08-08 12:41:30.859 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4", 'SELECT * FROM case_setup_ssep WHERE patient_id = 4 LIMIT 5']
+2024-08-08 12:41:30.882 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:41:30.884 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:41:30.885 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:41:30.886 | DEBUG    | api:insert_patient:194 - 'UPDATE' is not in list
+2024-08-08 12:41:30.887 | INFO     | api:insert_patient:195 - Reconnecting DB
+2024-08-08 12:41:44.656 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Update the SSEP information as follows: assign Electrode F to Neck_Electrode and 0 to the fields Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops. Verify that these changes are made in the dataset.
+2024-08-08 12:42:11.555 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4", 'SELECT * FROM case_setup_ssep WHERE patient_id = 4 LIMIT 5']
+2024-08-08 12:42:11.580 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:42:11.582 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:42:11.582 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:42:11.584 | DEBUG    | api:insert_patient:194 - 'UPDATE' is not in list
+2024-08-08 12:42:11.585 | INFO     | api:insert_patient:195 - Reconnecting DB
+2024-08-08 12:42:50.240 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Update the SSEP information as follows: assign Electrode F to Neck_Electrode and set the following fields to 0: Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops. Verify that these changes are made in the dataset.
+2024-08-08 12:42:54.194 | DEBUG    | main:validate:102 - ["```sql UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4", 'SELECT * FROM case_setup_ssep WHERE patient_id = 4 LIMIT 5', '```']
+2024-08-08 12:42:54.226 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:42:54.226 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:42:54.227 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:42:54.231 | DEBUG    | api:insert_patient:194 - 'UPDATE' is not in list
+2024-08-08 12:42:54.232 | INFO     | api:insert_patient:195 - Reconnecting DB
+2024-08-08 12:42:58.919 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Apply the following updates to the SSEP dataset: for Neck_Electrode, use Electrode F, and for Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops, set each to 0. Please ensure these updates are recorded correctly.
+2024-08-08 12:43:01.991 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4"]
+2024-08-08 12:43:02.015 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:43:02.015 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:43:02.016 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:43:19.419 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Apply the following updates to the SSEP dataset: for Neck_Electrode, use Electrode F, and for Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops, set each to 0. Please ensure these updates are recorded correctly. Confirm the changes are reflected as requested.
+2024-08-08 12:43:22.951 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET      Neck_Electrode = 'Electrode F',     Upper_Cortical = 0,     Upper_Subcortical = 0,     ERBS = 0,     Lower_Cortical = 0,     Lower_Subcortical = 0,     Pops = 0 WHERE patient_id = 4", 'SELECT * FROM case_setup_ssep WHERE patient_id = 4 LIMIT 5']
+2024-08-08 12:43:22.980 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:43:22.980 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:43:22.981 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:43:22.982 | DEBUG    | api:insert_patient:194 - 'UPDATE' is not in list
+2024-08-08 12:43:22.983 | INFO     | api:insert_patient:195 - Reconnecting DB
+2024-08-08 12:45:08.457 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 4: Apply the following updates to the SSEP dataset: for Neck_Electrode, use Electrode F, and for Upper_Cortical, Upper_Subcortical, ERBS, Lower_Cortical, Lower_Subcortical, and Pops, set each to 0. Please ensure these updates are recorded correctly.
+2024-08-08 12:45:11.754 | DEBUG    | main:validate:102 - ["UPDATE case_setup_ssep SET Neck_Electrode = 'Electrode F',      Upper_Cortical = 0,      Upper_Subcortical = 0,      ERBS = 0,      Lower_Cortical = 0,      Lower_Subcortical = 0,      Pops = 0 WHERE patient_id = 4"]
+2024-08-08 12:45:11.781 | DEBUG    | chains:validate_query:409 - {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0', 'patient_id': '4'}
+2024-08-08 12:45:11.782 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'Neck_Electrode': 'Electrode F', 'Upper_Cortical': '0', 'Upper_Subcortical': '0', 'ERBS': '0', 'Lower_Cortical': '0', 'Lower_Subcortical': '0', 'Pops': '0'}, 'where': {'patient_id': '4'}}]
+2024-08-08 12:45:11.782 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 12:48:19.860 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Hey, I need your help with adding a new patient to the system. Here’s the information you'll need to insert: First Name: John Last Name: Doe Gender: Male Date of Birth: 1985-06-15 Height: 175 cm Weight: 70 kg Insurance Type: HealthPlan A Policy Number: HP123456789 Medical Record: MR987654321 Hospital Record: HR123456789
+2024-08-08 12:48:22.753 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('John', 'Doe', 'Male', '1985-06-15', 175, 70, 'HealthPlan A', 'HP123456789', 'MR987654321', 'HR123456789')", '```']
+2024-08-08 12:48:22.795 | DEBUG    | chains:validate_query:267 - {'FirstName': 'John', 'LastName': 'Doe', 'Gender': 'Male', 'DateOfBirth': '1985-06-15', 'Height': '175', 'Weight': '70', 'InsuranceType': 'HealthPlan A', 'PolicyNumber': 'HP123456789', 'MedicalRecord': 'MR987654321', 'HospitalRecord': 'HR123456789'}
+2024-08-08 12:48:22.805 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 12:48:22.806 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'InsuranceType', 'type': "Input should be 'Private', 'Medicare', 'Medicaid' or 'VA'", 'tablename_for_hint': 'INSERT'}]
+2024-08-08 12:48:34.266 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Can you add a new patient to the system with the following information: First Name: John, Last Name: Doe, Gender: Male, Date of Birth: 1985-06-15, Height: 175 cm, Weight: 70 kg, Insurance Type: HealthPlan A, Policy Number: HP123456789, Medical Record: MR987654321, Hospital Record: HR123456789, and mark the information as Private?
+2024-08-08 12:48:38.248 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('John', 'Doe', 'Male', '1985-06-15', 175, 70, 'Private', 'HP123456789', 'MR987654321', 'HR123456789')", '```']
+2024-08-08 12:48:38.284 | DEBUG    | chains:validate_query:267 - {'FirstName': 'John', 'LastName': 'Doe', 'Gender': 'Male', 'DateOfBirth': '1985-06-15', 'Height': '175', 'Weight': '70', 'InsuranceType': 'Private', 'PolicyNumber': 'HP123456789', 'MedicalRecord': 'MR987654321', 'HospitalRecord': 'HR123456789'}
+2024-08-08 12:48:38.285 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'John', 'LastName': 'Doe', 'Gender': 'Male', 'DateOfBirth': '1985-06-15', 'Height': '175', 'Weight': '70', 'InsuranceType': 'Private', 'PolicyNumber': 'HP123456789', 'MedicalRecord': 'MR987654321', 'HospitalRecord': 'HR123456789', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 12:48:38.287 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 12:48:46.630 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Can you add a new patient to the system with the following information: First Name: John, Last Name: Doe, Gender: Male, Date of Birth: 1985-06-15, Height: 175 cm, Weight: 70 kg, Insurance Type: HealthPlan A, Policy Number: HP123456789, Medical Record: MR987654321, Hospital Record: HR123456789, and mark the information as Private?
+2024-08-08 12:48:52.098 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('John', 'Doe', 'Male', '1985-06-15', 175, 70, 'Private', 'HP123456789', 'MR987654321', 'HR123456789')", '```']
+2024-08-08 12:48:52.124 | DEBUG    | chains:validate_query:267 - {'FirstName': 'John', 'LastName': 'Doe', 'Gender': 'Male', 'DateOfBirth': '1985-06-15', 'Height': '175', 'Weight': '70', 'InsuranceType': 'Private', 'PolicyNumber': 'HP123456789', 'MedicalRecord': 'MR987654321', 'HospitalRecord': 'HR123456789'}
+2024-08-08 12:48:52.126 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'John', 'LastName': 'Doe', 'Gender': 'Male', 'DateOfBirth': '1985-06-15', 'Height': '175', 'Weight': '70', 'InsuranceType': 'Private', 'PolicyNumber': 'HP123456789', 'MedicalRecord': 'MR987654321', 'HospitalRecord': 'HR123456789', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 12:48:52.126 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 12:49:35.559 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Hey, I need you to add a new record to the system. Here’s the information for the procedure: EMR_ID: EMR123456 Patient ID: PAT78910 Procedure Name: Appendectomy Hospital: General City Hospital Date of Service: 2024-08-10 Start Time: 14:00 Duration: 90 minutes Anesthesiologist: Dr. Jane Smith Reader: Dr. Mark Johnson SNP1: SNP001 SNP2: SNP002 Surgeon: Dr. Emily Davis
+2024-08-08 12:49:40.140 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (123456, 78910, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis')", '```']
+2024-08-08 12:49:40.178 | DEBUG    | chains:validate_query:267 - {'EMR_ID': '123456', 'patient_id': '78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis'}
+2024-08-08 12:49:40.179 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'EMR_ID': '123456', 'patient_id': '78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis', 'table_name_for_reference': 'PatientInfo_extension'}]
+2024-08-08 12:49:40.179 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 12:49:53.282 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Add a new record to the system with the following information: EMR_ID: EMR123456, Patient ID: PAT78910, Procedure Name: Appendectomy, Hospital: General City Hospital, Date of Service: 2024-08-10, Start Time: 14:00, Duration: 90 minutes, Anesthesiologist: Dr. Jane Smith, Reader: Dr. Mark Johnson, SNP1: SNP001, SNP2: SNP002, Surgeon: Dr. Emily Davis. Also, confirm if this is a new patient with the information provided: no.
+2024-08-08 12:49:57.875 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (EMR123456, PAT78910, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis')", '```']
+2024-08-08 12:49:57.901 | DEBUG    | chains:validate_query:267 - {'EMR_ID': 'EMR123456', 'patient_id': 'PAT78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis'}
+2024-08-08 12:49:57.902 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 12:49:57.902 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'EMR_ID', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 12:50:20.576 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add a new record to the system with the following information: EMR_ID: EMR123456, Patient ID: PAT78910, Procedure Name: Appendectomy, Hospital: General City Hospital, Date of Service: 2024-08-10, Start Time: 14:00, Duration: 90 minutes, Anesthesiologist: Dr. Jane Smith, Reader: Dr. Mark Johnson, SNP1: SNP001, SNP2: SNP002, Surgeon: Dr. Emily Davis. Also, confirm if this is a new patient with the information provided: no.
+2024-08-08 12:50:23.960 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (EMR123456, PAT78910, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis')", '```']
+2024-08-08 12:50:23.994 | DEBUG    | chains:validate_query:267 - {'EMR_ID': 'EMR123456', 'patient_id': 'PAT78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis'}
+2024-08-08 12:50:23.997 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 12:50:23.998 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'EMR_ID', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 12:50:38.958 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add a new record to the system with the following information: EMR_ID: EMR123456, Patient ID: PAT78910, Procedure Name: Appendectomy, Hospital: General City Hospital, Date of Service: 2024-08-10, Start Time: 14:00, Duration: 90 minutes, Anesthesiologist: Dr. Jane Smith, Reader: Dr. Mark Johnson, SNP1: SNP001, SNP2: SNP002, Surgeon: Dr. Emily Davis. Also, confirm if this is a new patient with the information provided: no.
+2024-08-08 12:50:42.083 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (EMR123456, PAT78910, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis')", '```']
+2024-08-08 12:50:42.118 | DEBUG    | chains:validate_query:267 - {'EMR_ID': 'EMR123456', 'patient_id': 'PAT78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis'}
+2024-08-08 12:50:42.120 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 12:50:42.121 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'EMR_ID', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:04:44.725 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add a new record to the system with the following information: EMR_ID: EMR123456, Patient ID: PAT78910, Procedure Name: Appendectomy, Hospital: General City Hospital, Date of Service: 2024-08-10, Start Time: 14:00, Duration: 90 minutes, Anesthesiologist: Dr. Jane Smith, Reader: Dr. Mark Johnson, SNP1: SNP001, SNP2: SNP002, Surgeon: Dr. Emily Davis. Also, confirm if this is a new patient with the information provided: no.
+2024-08-08 13:04:48.003 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (EMR123456, PAT78910, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis')", '```']
+2024-08-08 13:04:48.047 | DEBUG    | chains:validate_query:267 - {'EMR_ID': 'EMR123456', 'patient_id': 'PAT78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis'}
+2024-08-08 13:04:48.049 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:04:48.049 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'EMR_ID', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:05:45.914 | DEBUG    | main:log:212 - Question : Add a new patient record with the following details: 
+- EMR_ID: 123456
+- Patient ID: 790
+- Procedure Name: Appendectomy
+- Hospital: General City Hospital
+- Date of Service: 2024-08-10
+- Start Time: 14:00
+- Duration: 90 minutes
+- Anesthesiologist: Dr. Jane Smith
+- Reader: Dr. Mark Johnson
+- SNP1: SNP001
+- SNP2: SNP002
+- Surgeon: Dr. Emily Davis
+2024-08-08 13:05:45.915 | DEBUG    | main:log:213 - Query : ```sql
+INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon) 
+VALUES (123456, 790, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis');
+```
+2024-08-08 13:05:45.915 | DEBUG    | main:log:214 - Result : ["Error: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Ho' at line 1\n[SQL: ```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (123456, 790, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"]
+2024-08-08 13:07:01.569 | DEBUG    | main:log:212 - Question : Is there a syntax issue with the SQL command when trying to add the new patient record with the following details: 
+- EMR_ID: 111
+- Patient ID: 790
+- Procedure Name: L5-S1 Procedure
+- Hospital: West Windsor Hospital
+- Date of Service: 2024-06-27
+- Start Time: 15:00:00
+- Duration: 05:00:00
+- Anesthesiologist: Dr. Jorgan
+- Reader: Dr. Delgati
+- SNP1: Rahul
+- SNP2: [Leave blank]
+- Surgeon: Dr. Fartget
+2024-08-08 13:07:01.570 | DEBUG    | main:log:213 - Query : ```sql
+INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon) 
+VALUES (111, 790, 'L5-S1 Procedure', 'West Windsor Hospital', '2024-06-27', '15:00:00', '05:00:00', 'Dr. Jorgan', 'Dr. Delgati', 'Rahul', NULL, 'Dr. Fartget');
+```
+2024-08-08 13:07:01.570 | DEBUG    | main:log:214 - Result : ["Error: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Ho' at line 1\n[SQL: ```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (111, 790, 'L5-S1 Procedure', 'West Windsor Hospital', '2024-06-27', '15:00:00', '05:00:00', 'Dr. Jorgan', 'Dr. Delgati', 'Rahul', NULL, 'Dr. Fartget');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"]
+2024-08-08 13:09:33.817 | DEBUG    | main:log:212 - Question : Is there a syntax issue with the SQL command when trying to add the new patient record with the following details:
+- First Name: Jane
+- Last Name: Smith
+- Gender: Female
+- Date of Birth: 1992-08-23
+- Height: 165 cm
+- Weight: 60 kg
+- Insurance Type: HealthPlan B
+- Policy Number: HP987654321
+- Medical Record: MR123456789
+- Hospital Record: HR987654321
+2024-08-08 13:09:33.820 | DEBUG    | main:log:213 - Query : ```sql
+INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord) 
+VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'HealthPlan B', 'HP987654321', 'MR123456789', 'HR987654321');
+```
+2024-08-08 13:09:33.821 | DEBUG    | main:log:214 - Result : ["Error: (mysql.connector.errors.ProgrammingError) 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height' at line 1\n[SQL: ```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'HealthPlan B', 'HP987654321', 'MR123456789', 'HR987654321');]\n(Background on this error at: https://sqlalche.me/e/20/f405)"]
+2024-08-08 13:09:40.621 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add a new record to the system with the following information: EMR_ID: EMR123456, Patient ID: PAT78910, Procedure Name: Appendectomy, Hospital: General City Hospital, Date of Service: 2024-08-10, Start Time: 14:00, Duration: 90 minutes, Anesthesiologist: Dr. Jane Smith, Reader: Dr. Mark Johnson, SNP1: SNP001, SNP2: SNP002, Surgeon: Dr. Emily Davis. Also, confirm if this is a new patient with the information provided: no. Additionally, add a new patient to the system with the following information: First Name: Jane, Last Name: Smith, Gender: Female, Date of Birth: 1992-08-23, Height: 165 cm, Weight: 60 kg, Insurance Type: HealthPlan B, Policy Number: HP987654321, Medical Record: MR123456789, Hospital Record: HR987654321.
+2024-08-08 13:09:45.095 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord) VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'Private', 'HP987654321', 'MR123456789', 'HR987654321')", "INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon) VALUES (EMR123456, PAT78910, 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis')", '```']
+2024-08-08 13:09:45.132 | DEBUG    | chains:validate_query:267 - {'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321'}
+2024-08-08 13:09:45.133 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 13:09:45.133 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:09:45.138 | DEBUG    | chains:validate_query:267 - {'EMR_ID': 'EMR123456', 'patient_id': 'PAT78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis'}
+2024-08-08 13:09:45.139 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:09:45.139 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'EMR_ID', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:09:59.171 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add a new record to the system with the following information: EMR_ID: EMR123456, Patient ID: PAT78910, Procedure Name: Appendectomy, Hospital: General City Hospital, Date of Service: 2024-08-10, Start Time: 14:00, Duration: 90 minutes, Anesthesiologist: Dr. Jane Smith, Reader: Dr. Mark Johnson, SNP1: SNP001, SNP2: SNP002, Surgeon: Dr. Emily Davis. Also, confirm if this is a new patient with the information provided: no. Additionally, add a new patient to the system with the following information: First Name: Jane, Last Name: Smith, Gender: Female, Date of Birth: 1992-08-23, Height: 165 cm, Weight: 60 kg, Insurance Type: HealthPlan B, Policy Number: HP987654321, Medical Record: MR123456789, Hospital Record: HR987654321.
+2024-08-08 13:10:05.270 | DEBUG    | main:validate:102 - ["INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'HealthPlan B', 'HP987654321', 'MR123456789', 'HR987654321')", "INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES ('EMR123456', 'PAT78910', 'Appendectomy', 'General City Hospital', '2024-08-10', '14:00', '01:30:00', 'Dr. Jane Smith', 'Dr. Mark Johnson', 'SNP001', 'SNP002', 'Dr. Emily Davis')"]
+2024-08-08 13:10:05.307 | DEBUG    | chains:validate_query:267 - {'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'HealthPlan B', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321'}
+2024-08-08 13:10:05.308 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:10:05.309 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'InsuranceType', 'type': "Input should be 'Private', 'Medicare', 'Medicaid' or 'VA'", 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:10:05.313 | DEBUG    | chains:validate_query:267 - {'EMR_ID': 'EMR123456', 'patient_id': 'PAT78910', 'Procedure_Name': 'Appendectomy', 'Hospital': 'General City Hospital', 'Date_of_Service': '2024-08-10', 'Start_Time': '14:00', 'Duration': '01:30:00', 'Anesthesiologist': 'Dr. Jane Smith', 'Reader': 'Dr. Mark Johnson', 'SNP1': 'SNP001', 'SNP2': 'SNP002', 'Surgeon': 'Dr. Emily Davis'}
+2024-08-08 13:10:05.314 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:10:05.314 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'EMR_ID', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:11:51.516 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 13:11:52.158 | INFO     | main:connect_db:49 - Connected to database
+2024-08-08 13:11:59.851 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Hey, I need your help with adding a new patient to the system. Here’s the information you'll need to insert: First Name: Jane Last Name: Smith Gender: Female Date of Birth: 1992-08-23 Height: 165 cm Weight: 60 kg Insurance Type: HealthPlan B Policy Number: HP987654321 Medical Record: MR123456789 Hospital Record: HR987654321
+2024-08-08 13:12:03.235 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'Private', 'HP987654321', 'MR123456789', 'HR987654321')", '```']
+2024-08-08 13:12:03.450 | DEBUG    | chains:validate_query:267 - {'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321'}
+2024-08-08 13:12:03.451 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 13:12:03.451 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:12:12.898 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Can you proceed with adding a new patient to the system with the following information: First Name: Jane, Last Name: Smith, Gender: Female, Date of Birth: 1992-08-23, Height: 165 cm, Weight: 60 kg, Insurance Type: HealthPlan B, Policy Number: HP987654321, Medical Record: MR123456789, Hospital Record: HR987654321?
+2024-08-08 13:12:15.523 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'HealthPlan B', 'HP987654321', 'MR123456789', 'HR987654321')", '```']
+2024-08-08 13:12:15.661 | DEBUG    | chains:validate_query:267 - {'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'HealthPlan B', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321'}
+2024-08-08 13:12:15.662 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:12:15.662 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'InsuranceType', 'type': "Input should be 'Private', 'Medicare', 'Medicaid' or 'VA'", 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:12:29.681 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add a new patient to the system with the following information: First Name: Jane, Last Name: Smith, Gender: Female, Date of Birth: 1992-08-23, Height: 165 cm, Weight: 60 kg, Insurance Type: HealthPlan B, Policy Number: HP987654321, Medical Record: MR123456789, Hospital Record: HR987654321, and mark the information as Private.
+2024-08-08 13:12:32.434 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'Private', 'HP987654321', 'MR123456789', 'HR987654321')", '```']
+2024-08-08 13:12:32.472 | DEBUG    | chains:validate_query:267 - {'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321'}
+2024-08-08 13:12:32.474 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 13:12:32.475 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:12:48.842 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add a new patient to the system with the following information: First Name: Jane, Last Name: Smith, Gender: Female, Date of Birth: 1992-08-23, Height: 165 cm, Weight: 60 kg, Insurance Type: HealthPlan B, Policy Number: HP987654321, Medical Record: MR123456789, Hospital Record: HR987654321, and mark the information as Private.
+2024-08-08 13:12:51.817 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('Jane', 'Smith', 'Female', '1992-08-23', 165, 60, 'Private', 'HP987654321', 'MR123456789', 'HR987654321')", '```']
+2024-08-08 13:12:51.880 | DEBUG    | chains:validate_query:267 - {'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321'}
+2024-08-08 13:12:51.883 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'Jane', 'LastName': 'Smith', 'Gender': 'Female', 'DateOfBirth': '1992-08-23', 'Height': '165', 'Weight': '60', 'InsuranceType': 'Private', 'PolicyNumber': 'HP987654321', 'MedicalRecord': 'MR123456789', 'HospitalRecord': 'HR987654321', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 13:12:51.885 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:15:32.282 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Hey, I need your help with adding a new patient procedure to the system. Here’s the information you'll need to insert: EMR_ID: 12345 Patient ID: 791 Procedure Name: Knee Surgery Hospital: General Hospital Date of Service: 2024-08-01 Start Time: 09:00 Duration: 2 hours Anesthesiologist: Dr. John Doe Reader: Dr. Jane Smith SNP1: SNP123 SNP2: SNP456 Surgeon: Dr. Emily Brown
+2024-08-08 13:15:36.873 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (12345, 791, 'Knee Surgery', 'General Hospital', '2024-08-01', '09:00', '02:00:00', 'Dr. John Doe', 'Dr. Jane Smith', 'SNP123', 'SNP456', 'Dr. Emily Brown')", '```']
+2024-08-08 13:15:36.928 | DEBUG    | chains:validate_query:267 - {'EMR_ID': '12345', 'patient_id': '791', 'Procedure_Name': 'Knee Surgery', 'Hospital': 'General Hospital', 'Date_of_Service': '2024-08-01', 'Start_Time': '09:00', 'Duration': '02:00:00', 'Anesthesiologist': 'Dr. John Doe', 'Reader': 'Dr. Jane Smith', 'SNP1': 'SNP123', 'SNP2': 'SNP456', 'Surgeon': 'Dr. Emily Brown'}
+2024-08-08 13:15:36.930 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'EMR_ID': '12345', 'patient_id': '791', 'Procedure_Name': 'Knee Surgery', 'Hospital': 'General Hospital', 'Date_of_Service': '2024-08-01', 'Start_Time': '09:00', 'Duration': '02:00:00', 'Anesthesiologist': 'Dr. John Doe', 'Reader': 'Dr. Jane Smith', 'SNP1': 'SNP123', 'SNP2': 'SNP456', 'Surgeon': 'Dr. Emily Brown', 'table_name_for_reference': 'PatientInfo_extension'}]
+2024-08-08 13:15:36.931 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:15:51.107 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Please proceed with adding a new patient procedure to the system with the following details:
+
+EMR_ID: 12345
+Patient ID: 791
+Procedure Name: Knee Surgery
+Hospital: General Hospital
+Date of Service: 2024-08-01
+Start Time: 09:00
+Duration: 2 hours
+Anesthesiologist: Dr. John Doe
+Reader: Dr. Jane Smith
+SNP1: SNP123
+SNP2: SNP456
+Surgeon: Dr. Emily Brown
+2024-08-08 13:15:55.888 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (EMR_ID, patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (12345, 791, 'Knee Surgery', 'General Hospital', '2024-08-01', '09:00', '02:00:00', 'Dr. John Doe', 'Dr. Jane Smith', 'SNP123', 'SNP456', 'Dr. Emily Brown')", '```']
+2024-08-08 13:15:55.924 | DEBUG    | chains:validate_query:267 - {'EMR_ID': '12345', 'patient_id': '791', 'Procedure_Name': 'Knee Surgery', 'Hospital': 'General Hospital', 'Date_of_Service': '2024-08-01', 'Start_Time': '09:00', 'Duration': '02:00:00', 'Anesthesiologist': 'Dr. John Doe', 'Reader': 'Dr. Jane Smith', 'SNP1': 'SNP123', 'SNP2': 'SNP456', 'Surgeon': 'Dr. Emily Brown'}
+2024-08-08 13:15:55.926 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'EMR_ID': '12345', 'patient_id': '791', 'Procedure_Name': 'Knee Surgery', 'Hospital': 'General Hospital', 'Date_of_Service': '2024-08-01', 'Start_Time': '09:00', 'Duration': '02:00:00', 'Anesthesiologist': 'Dr. John Doe', 'Reader': 'Dr. Jane Smith', 'SNP1': 'SNP123', 'SNP2': 'SNP456', 'Surgeon': 'Dr. Emily Brown', 'table_name_for_reference': 'PatientInfo_extension'}]
+2024-08-08 13:15:55.926 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:18:29.011 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Hey, I need your help with adding new records to the medical history tables. Here’s the information you'll need to insert: 
+
+Medical_History: 
+- History ID: 1001 
+- Patient ID: 791 
+- Condition: Hypertension 
+- Diagnosis Date: 2023-06-15 
+- Treatment: Medication 
+- Outcome: Improved 
+
+Medical_History_Symptoms: 
+- Symptom ID: 2001 
+- Patient ID: 791 
+- Symptom: Headache 
+- Location: Forehead 
+- Body Part: Head 
+- Cause: Stress 
+- Treatment: Pain relief medication 
+
+Medical_Procedures: 
+- Procedure ID: 3001 
+- Patient ID: 791 
+- Procedure Name: Appendectomy 
+- Hospital: City Hospital 
+- Date of Service: 2023-07-20 
+- Start Time: 08:00 
+- Duration: 1 hour 
+- Anesthesiologist: Dr. Alan White 
+- Reader: Dr. Susan Black 
+- SNP1: SNP789 
+- SNP2: SNP101 
+- Surgeon: Dr. Michael Green 
+
+Medication: 
+- Medication ID: 4001 
+- Patient ID: 791 
+- Medication Name: Lisinopril 
+- Dosage: 10 mg 
+- Start Date: 2023-06-15 
+- End Date: Ongoing 
+- Prescribing Doctor: Dr. John Doe 
+- Notes: Taken daily in the morning
+2024-08-08 13:18:35.235 | DEBUG    | main:validate:102 - ['```sql INSERT INTO medical_history_comorbidities (id, patient_id, hypertension) VALUES (1001, 791, 1)', "INSERT INTO medical_history_symptoms (id, patient_id, symptom, side, area, source, action) VALUES (2001, 791, 'Headache', 'Forehead', 'Head', 'Stress', 'Pain relief medication')", "INSERT INTO medical_history_surgeries (id, patient_id, procedure_name, type, dos, notes) VALUES (3001, 791, 'Appendectomy', 'Surgery', '2023-07-20', 'Hospital: City Hospital, Start Time: 08:00, Duration: 1 hour, Anesthesiologist: Dr. Alan White, Reader: Dr. Susan Black, SNP1: SNP789, SNP2: SNP101, Surgeon: Dr. Michael Green')", "INSERT INTO medical_history_note (id, patient_id, note) VALUES (4001, 791, 'Medication Name: Lisinopril, Dosage: 10 mg, Start Date: 2023-06-15, End Date: Ongoing, Prescribing Doctor: Dr. John Doe, Notes: Taken daily in the morning')", '```']
+2024-08-08 13:18:35.271 | DEBUG    | chains:validate_query:267 - {'id': '1001', 'patient_id': '791', 'hypertension': '1'}
+2024-08-08 13:18:35.272 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:35.272 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'other', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:35.276 | DEBUG    | chains:validate_query:267 - {'id': '2001', 'patient_id': '791', 'symptom': 'Headache', 'side': 'Forehead', 'area': 'Head', 'source': 'Stress', 'action': 'Pain relief medication'}
+2024-08-08 13:18:35.277 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'id': '2001', 'patient_id': '791', 'symptom': 'Headache', 'side': 'Forehead', 'area': 'Head', 'source': 'Stress', 'action': 'Pain relief medication', 'table_name_for_reference': 'medical_history_Symptoms'}]
+2024-08-08 13:18:35.277 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:18:35.280 | DEBUG    | chains:validate_query:267 - {'id': '3001', 'patient_id': '791', 'procedure_name': 'Appendectomy', 'type': 'Surgery', 'dos': '2023-07-20', 'notes': 'Hospital: City Hospital, Start Time: 08:00, Duration: 1 hour, Anesthesiologist: Dr. Alan White, Reader: Dr. Susan Black, SNP1: SNP789, SNP2: SNP101, Surgeon: Dr. Michael Green'}
+2024-08-08 13:18:35.281 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'id': '3001', 'patient_id': '791', 'procedure_name': 'Appendectomy', 'type': 'Surgery', 'dos': '2023-07-20', 'notes': 'Hospital: City Hospital, Start Time: 08:00, Duration: 1 hour, Anesthesiologist: Dr. Alan White, Reader: Dr. Susan Black, SNP1: SNP789, SNP2: SNP101, Surgeon: Dr. Michael Green', 'table_name_for_reference': 'medical_history_Surgeries'}]
+2024-08-08 13:18:35.282 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:18:35.284 | DEBUG    | chains:validate_query:267 - {'id': '4001', 'patient_id': '791', 'note': 'Medication Name: Lisinopril, Dosage: 10 mg, Start Date: 2023-06-15, End Date: Ongoing, Prescribing Doctor: Dr. John Doe, Notes: Taken daily in the morning'}
+2024-08-08 13:18:35.285 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'id': '4001', 'patient_id': '791', 'note': 'Medication Name: Lisinopril, Dosage: 10 mg, Start Date: 2023-06-15, End Date: Ongoing, Prescribing Doctor: Dr. John Doe, Notes: Taken daily in the morning', 'table_name_for_reference': 'medical_history_Note'}]
+2024-08-08 13:18:35.286 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:18:47.632 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Hey, I need your help with adding new records to the medical history tables. Here’s the information you'll need to insert: and New Patient with info: which field?
+2024-08-08 13:18:56.194 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('FirstNameValue', 'LastNameValue', 'GenderValue', 'DateOfBirthValue', HeightValue, WeightValue, 'InsuranceTypeValue', 'PolicyNumberValue', 'MedicalRecordValue', 'HospitalRecordValue')", 'INSERT INTO medical_history_autonomic (patient_id, bowel_bladder_changes, discoloration, burning_pain, swollen_skin)  VALUES (PatientIDValue, BowelBladderChangesValue, DiscolorationValue, BurningPainValue, SwollenSkinValue)', "INSERT INTO medical_history_comorbidities (patient_id, diabetes, hypertension, stroke, seizure, vascular_disease, other)  VALUES (PatientIDValue, DiabetesValue, HypertensionValue, StrokeValue, SeizureValue, VascularDiseaseValue, 'OtherValue')", "INSERT INTO medical_history_diagnosis (patient_id, code, diagnosis, notes)  VALUES (PatientIDValue, 'CodeValue', 'DiagnosisValue', 'NotesValue')", "INSERT INTO medical_history_implants (patient_id, implant_name, date_placed, dos, notes)  VALUES (PatientIDValue, 'ImplantNameValue', 'DatePlacedValue', 'DosValue', 'NotesValue')", "INSERT INTO medical_history_motorfunction (patient_id, frequent_falls, difficulty_getting_out_of_bed, trouble_walking, poor_balance, other)  VALUES (PatientIDValue, FrequentFallsValue, DifficultyGettingOutOfBedValue, TroubleWalkingValue, PoorBalanceValue, 'OtherValue')", "INSERT INTO medical_history_note (patient_id, note)  VALUES (PatientIDValue, 'NoteValue')", "INSERT INTO medical_history_seizures (patient_id, seizures_status, note)  VALUES (PatientIDValue, SeizuresStatusValue, 'NoteValue')", "INSERT INTO medical_history_surgeries (patient_id, procedure_name, type, dos, notes)  VALUES (PatientIDValue, 'ProcedureNameValue', 'TypeValue', 'DosValue', 'NotesValue')", "INSERT INTO medical_history_symptoms (patient_id, symptom, side, area, source, action)  VALUES (PatientIDValue, 'SymptomValue', 'SideValue', 'AreaValue', 'SourceValue', 'ActionValue')", '```']
+2024-08-08 13:18:56.230 | DEBUG    | chains:validate_query:267 - {'FirstName': 'FirstNameValue', 'LastName': 'LastNameValue', 'Gender': 'GenderValue', 'DateOfBirth': 'DateOfBirthValue', 'Height': 'HeightValue', 'Weight': 'WeightValue', 'InsuranceType': 'InsuranceTypeValue', 'PolicyNumber': 'PolicyNumberValue', 'MedicalRecord': 'MedicalRecordValue', 'HospitalRecord': 'HospitalRecordValue'}
+2024-08-08 13:18:56.237 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.237 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'Gender', 'type': "Input should be 'Male', 'Female' or 'Other'", 'tablename_for_hint': 'INSERT'}, {'field': 'Height', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'Weight', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'InsuranceType', 'type': "Input should be 'Private', 'Medicare', 'Medicaid' or 'VA'", 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.242 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'bowel_bladder_changes': 'BowelBladderChangesValue', 'discoloration': 'DiscolorationValue', 'burning_pain': 'BurningPainValue', 'swollen_skin': 'SwollenSkinValue'}
+2024-08-08 13:18:56.243 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.244 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'bowel_bladder_changes', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'discoloration', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'burning_pain', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'swollen_skin', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.249 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'diabetes': 'DiabetesValue', 'hypertension': 'HypertensionValue', 'stroke': 'StrokeValue', 'seizure': 'SeizureValue', 'vascular_disease': 'VascularDiseaseValue', 'other': 'OtherValue'}
+2024-08-08 13:18:56.251 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.251 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'diabetes', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'hypertension', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'stroke', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'seizure', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'vascular_disease', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.256 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'code': 'CodeValue', 'diagnosis': 'DiagnosisValue', 'notes': 'NotesValue'}
+2024-08-08 13:18:56.258 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.258 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.264 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'implant_name': 'ImplantNameValue', 'date_placed': 'DatePlacedValue', 'dos': 'DosValue', 'notes': 'NotesValue'}
+2024-08-08 13:18:56.265 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.265 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.270 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'frequent_falls': 'FrequentFallsValue', 'difficulty_getting_out_of_bed': 'DifficultyGettingOutOfBedValue', 'trouble_walking': 'TroubleWalkingValue', 'poor_balance': 'PoorBalanceValue', 'other': 'OtherValue'}
+2024-08-08 13:18:56.272 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.272 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'frequent_falls', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'difficulty_getting_out_of_bed', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'trouble_walking', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'poor_balance', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.277 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'note': 'NoteValue'}
+2024-08-08 13:18:56.278 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.278 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.282 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'seizures_status': 'SeizuresStatusValue', 'note': 'NoteValue'}
+2024-08-08 13:18:56.283 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.283 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'seizures_status', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.286 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'procedure_name': 'ProcedureNameValue', 'type': 'TypeValue', 'dos': 'DosValue', 'notes': 'NotesValue'}
+2024-08-08 13:18:56.288 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.289 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:18:56.292 | DEBUG    | chains:validate_query:267 - {'patient_id': 'PatientIDValue', 'symptom': 'SymptomValue', 'side': 'SideValue', 'area': 'AreaValue', 'source': 'SourceValue', 'action': 'ActionValue'}
+2024-08-08 13:18:56.293 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 13:18:56.294 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'patient_id', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 13:20:03.147 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Hey, I need your help with adding a new symptom record to the system. Here’s the information you'll need to insert: ID: 5001 Patient ID: 791 Symptom: Back Pain Side: Left Area: Lower Back Source: Injury Action: Physical Therapy
+2024-08-08 13:20:05.972 | DEBUG    | main:validate:102 - ["```sql INSERT INTO medical_history_symptoms (id, patient_id, symptom, side, area, source, action)  VALUES (5001, 791, 'Back Pain', 'Left', 'Lower Back', 'Injury', 'Physical Therapy')", '```']
+2024-08-08 13:20:06.012 | DEBUG    | chains:validate_query:267 - {'id': '5001', 'patient_id': '791', 'symptom': 'Back Pain', 'side': 'Left', 'area': 'Lower Back', 'source': 'Injury', 'action': 'Physical Therapy'}
+2024-08-08 13:20:06.014 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'id': '5001', 'patient_id': '791', 'symptom': 'Back Pain', 'side': 'Left', 'area': 'Lower Back', 'source': 'Injury', 'action': 'Physical Therapy', 'table_name_for_reference': 'medical_history_Symptoms'}]
+2024-08-08 13:20:06.015 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:20:14.127 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Hey, I need your help with adding a new symptom record to the system. Here’s the information you'll need to insert: ID: 5001 Patient ID: 791 Symptom: Back Pain Side: Left Area: Lower Back Source: Injury Action: Physical Therapy and New Patient with info: yes
+2024-08-08 13:20:16.564 | DEBUG    | main:validate:102 - ["INSERT INTO medical_history_symptoms (id, patient_id, symptom, side, area, source, action) VALUES (5001, 791, 'Back Pain', 'Left', 'Lower Back', 'Injury', 'Physical Therapy')"]
+2024-08-08 13:20:16.598 | DEBUG    | chains:validate_query:267 - {'id': '5001', 'patient_id': '791', 'symptom': 'Back Pain', 'side': 'Left', 'area': 'Lower Back', 'source': 'Injury', 'action': 'Physical Therapy'}
+2024-08-08 13:20:16.599 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'id': '5001', 'patient_id': '791', 'symptom': 'Back Pain', 'side': 'Left', 'area': 'Lower Back', 'source': 'Injury', 'action': 'Physical Therapy', 'table_name_for_reference': 'medical_history_Symptoms'}]
+2024-08-08 13:20:16.599 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:21:04.713 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Hey, I need your help with adding a new procedure record to the system. Here’s the information you'll need to insert: Patient ID: 791 Procedure Name: Cardiac Catheterization Type: Diagnostic Date of Service: 2024-07-15 Notes: Procedure successful with no complications
+2024-08-08 13:21:08.264 | DEBUG    | main:validate:102 - ["```sql INSERT INTO medical_history_surgeries (patient_id, procedure_name, type, dos, notes)  VALUES (791, 'Cardiac Catheterization', 'Diagnostic', '2024-07-15', 'Procedure successful with no complications')", '```']
+2024-08-08 13:21:08.302 | DEBUG    | chains:validate_query:267 - {'patient_id': '791', 'procedure_name': 'Cardiac Catheterization', 'type': 'Diagnostic', 'dos': '2024-07-15', 'notes': 'Procedure successful with no complications'}
+2024-08-08 13:21:08.304 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '791', 'procedure_name': 'Cardiac Catheterization', 'type': 'Diagnostic', 'dos': '2024-07-15', 'notes': 'Procedure successful with no complications', 'table_name_for_reference': 'medical_history_Surgeries'}]
+2024-08-08 13:21:08.304 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:22:06.029 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Hey, I need your help with adding a new seizure status record to the system. Here’s the information you'll need to insert: Patient ID: 791 Seizures Status: Controlled Note: Patient is on regular medication and has not had a seizure in 6 months
+2024-08-08 13:22:08.559 | DEBUG    | main:validate:102 - ["```sql INSERT INTO medical_history_seizures (patient_id, seizures_status, note) VALUES (791, 1, 'Patient is on regular medication and has not had a seizure in 6 months')", '```']
+2024-08-08 13:22:08.594 | DEBUG    | chains:validate_query:267 - {'patient_id': '791', 'seizures_status': '1', 'note': 'Patient is on regular medication and has not had a seizure in 6 months'}
+2024-08-08 13:22:08.595 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '791', 'seizures_status': '1', 'note': 'Patient is on regular medication and has not had a seizure in 6 months', 'table_name_for_reference': 'medical_history_Seizures'}]
+2024-08-08 13:22:08.595 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:22:14.893 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Do you want to proceed with adding a new seizure status record for Patient ID: 791 with the status "Controlled" and the note "Patient is on regular medication and has not had a seizure in 6 months"?
+2024-08-08 13:22:17.265 | DEBUG    | main:validate:102 - ["INSERT INTO medical_history_seizures (patient_id, seizures_status, note) VALUES (791, 1, 'Patient is on regular medication and has not had a seizure in 6 months')"]
+2024-08-08 13:22:17.297 | DEBUG    | chains:validate_query:267 - {'patient_id': '791', 'seizures_status': '1', 'note': 'Patient is on regular medication and has not had a seizure in 6 months'}
+2024-08-08 13:22:17.298 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '791', 'seizures_status': '1', 'note': 'Patient is on regular medication and has not had a seizure in 6 months', 'table_name_for_reference': 'medical_history_Seizures'}]
+2024-08-08 13:22:17.300 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:23:28.549 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - New Patient with info: Patient ID: 791. Note: Patient is on regular medication and has not had a seizure in 6 months.
+2024-08-08 13:23:30.779 | DEBUG    | main:validate:102 - ["INSERT INTO medical_history_note (patient_id, note) VALUES (791, 'Patient is on regular medication and has not had a seizure in 6 months')"]
+2024-08-08 13:23:30.830 | DEBUG    | chains:validate_query:267 - {'patient_id': '791', 'note': 'Patient is on regular medication and has not had a seizure in 6 months'}
+2024-08-08 13:23:30.833 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '791', 'note': 'Patient is on regular medication and has not had a seizure in 6 months', 'table_name_for_reference': 'medical_history_Note'}]
+2024-08-08 13:23:30.833 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 13:23:36.814 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - New Patient with info: Patient ID: 791. Note: Patient is on regular medication and has not had a seizure in 6 months. Proceed?
+2024-08-08 13:23:38.737 | DEBUG    | main:validate:102 - ["INSERT INTO medical_history_note (patient_id, note) VALUES (791, 'Patient is on regular medication and has not had a seizure in 6 months')"]
+2024-08-08 13:23:38.765 | DEBUG    | chains:validate_query:267 - {'patient_id': '791', 'note': 'Patient is on regular medication and has not had a seizure in 6 months'}
+2024-08-08 13:23:38.766 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '791', 'note': 'Patient is on regular medication and has not had a seizure in 6 months', 'table_name_for_reference': 'medical_history_Note'}]
+2024-08-08 13:23:38.766 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 15:54:31.534 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 1: I want to update information of patient in modalities for the given patient EEG, ECOG, EMG, MEP, SSEP, T04, Trig_EMG, CN_EMG, Others to all 0
+2024-08-08 15:54:35.208 | DEBUG    | main:validate:102 - ['UPDATE case_setup_modalties SET EEG = 0, ECOG = 0, EMG = 0, MEP = 0, SSEP = 0, T04 = 0, Trig_EMG = 0, CN_EMG = 0, Others = 0 WHERE patient_id = 1']
+2024-08-08 15:54:35.263 | DEBUG    | chains:validate_query:409 - {'EEG': '0', 'ECOG': '0', 'EMG': '0', 'MEP': '0', 'SSEP': '0', 'T04': '0', 'Trig_EMG': '0', 'CN_EMG': '0', 'Others': '0', 'patient_id': '1'}
+2024-08-08 15:54:35.267 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'EEG': '0', 'ECOG': '0', 'EMG': '0', 'MEP': '0', 'SSEP': '0', 'T04': '0', 'Trig_EMG': '0', 'CN_EMG': '0', 'Others': '0'}, 'where': {'patient_id': '1'}}]
+2024-08-08 15:54:35.267 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 15:57:35.943 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 1: update the information of patient in modalities for the given patient EEG, ECOG, EMG, MEP, SSEP, T04, Trig_EMG, CN_EMG, Others to all 5
+2024-08-08 15:57:38.970 | DEBUG    | main:validate:102 - ['UPDATE case_setup_modalties SET EEG = 5, ECOG = 5, EMG = 5, MEP = 5, SSEP = 5, T04 = 5, Trig_EMG = 5, CN_EMG = 5, Others = 5 WHERE patient_id = 1']
+2024-08-08 15:57:38.988 | DEBUG    | chains:validate_query:409 - {'EEG': '5', 'ECOG': '5', 'EMG': '5', 'MEP': '5', 'SSEP': '5', 'T04': '5', 'Trig_EMG': '5', 'CN_EMG': '5', 'Others': '5', 'patient_id': '1'}
+2024-08-08 15:57:38.990 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'EEG': '5', 'ECOG': '5', 'EMG': '5', 'MEP': '5', 'SSEP': '5', 'T04': '5', 'Trig_EMG': '5', 'CN_EMG': '5', 'Others': '5'}, 'where': {'patient_id': '1'}}]
+2024-08-08 15:57:38.990 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 16:00:47.125 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Add new patient details whose name is Anas.
+2024-08-08 16:00:50.658 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('Anas', 'LastName', 'Gender', 'DateOfBirth', 'Height', 'Weight', 'InsuranceType', 'PolicyNumber', 'MedicalRecord', 'HospitalRecord')", '```']
+2024-08-08 16:00:50.703 | DEBUG    | chains:validate_query:267 - {'FirstName': 'Anas', 'LastName': 'LastName', 'Gender': 'Gender', 'DateOfBirth': 'DateOfBirth', 'Height': 'Height', 'Weight': 'Weight', 'InsuranceType': 'InsuranceType', 'PolicyNumber': 'PolicyNumber', 'MedicalRecord': 'MedicalRecord', 'HospitalRecord': 'HospitalRecord'}
+2024-08-08 16:00:50.717 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 16:00:50.717 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'Gender', 'type': "Input should be 'Male', 'Female' or 'Other'", 'tablename_for_hint': 'INSERT'}, {'field': 'Height', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'Weight', 'type': 'Input should be a valid integer, unable to parse string as an integer', 'tablename_for_hint': 'INSERT'}, {'field': 'InsuranceType', 'type': "Input should be 'Private', 'Medicare', 'Medicaid' or 'VA'", 'tablename_for_hint': 'INSERT'}]
+2024-08-08 16:07:52.726 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: With context to patient id 1: I want to update information of patient in modalities for the given patient EEG, ECOG, EMG, MEP, SSEP, T04, Trig_EMG, CN_EMG, Others to all 0
+2024-08-08 16:07:55.677 | DEBUG    | main:validate:102 - ['UPDATE case_setup_modalties SET EEG = 0, ECOG = 0, EMG = 0, MEP = 0, SSEP = 0, T04 = 0, Trig_EMG = 0, CN_EMG = 0, Others = 0 WHERE patient_id = 1']
+2024-08-08 16:07:55.751 | DEBUG    | chains:validate_query:409 - {'EEG': '0', 'ECOG': '0', 'EMG': '0', 'MEP': '0', 'SSEP': '0', 'T04': '0', 'Trig_EMG': '0', 'CN_EMG': '0', 'Others': '0', 'patient_id': '1'}
+2024-08-08 16:07:55.752 | DEBUG    | chains:validate_update_query_chain:432 - Provided Fields = [{'set': {'EEG': '0', 'ECOG': '0', 'EMG': '0', 'MEP': '0', 'SSEP': '0', 'T04': '0', 'Trig_EMG': '0', 'CN_EMG': '0', 'Others': '0'}, 'where': {'patient_id': '1'}}]
+2024-08-08 16:07:55.756 | DEBUG    | chains:validate_update_query_chain:433 - Missing Fields []
+2024-08-08 16:13:01.722 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Update patient name Anas to Ansari
+2024-08-08 16:13:03.924 | DEBUG    | main:validate:102 - ["```sql UPDATE patientinfo SET FirstName = 'Ansari' WHERE FirstName = 'Anas'", '```']
+2024-08-08 16:13:03.958 | DEBUG    | api:insert_patient:160 - module 'validators' has no attribute 'PatientDetailsUpdate_insert'
+2024-08-08 16:13:03.960 | INFO     | api:insert_patient:161 - Reconnecting DB
+2024-08-08 17:02:15.754 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add new patient details whose name is Anas and insert a new patient with patient_id 58, FirstName 'sanju', LastName 'joy', Gender 'Male'.
+2024-08-08 17:02:18.789 | DEBUG    | main:validate:102 - ["INSERT INTO patientinfo (patient_id, FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord) VALUES (58, 'sanju', 'joy', 'Male', NULL, NULL, NULL, NULL, NULL, NULL, NULL)"]
+2024-08-08 17:02:18.867 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'FirstName': 'sanju', 'LastName': 'joy', 'Gender': 'Male'}
+2024-08-08 17:02:18.874 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 17:02:18.874 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'DateOfBirth', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}, {'field': 'Height', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}, {'field': 'Weight', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}, {'field': 'InsuranceType', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}, {'field': 'PolicyNumber', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}, {'field': 'MedicalRecord', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}, {'field': 'HospitalRecord', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 17:04:29.158 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add new patient details whose name is Anas and insert a new patient with patient_id 58, FirstName 'sanju', LastName 'joy', Gender 'Male', DOB 01/01/2000, Height 145, Weight 72, Insurance type Gov, Policy Number 123456789, Medical Record 741258963, Hospital Record DL123456
+2024-08-08 17:04:32.470 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (patient_id, FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES (58, 'sanju', 'joy', 'Male', '2000-01-01', 145, 72, 'Gov', '123456789', '741258963', 'DL123456')", '```']
+2024-08-08 17:04:32.521 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'FirstName': 'sanju', 'LastName': 'joy', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Gov', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456'}
+2024-08-08 17:04:32.523 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 17:04:32.523 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'InsuranceType', 'type': "Input should be 'Private', 'Medicare', 'Medicaid' or 'VA'", 'tablename_for_hint': 'INSERT'}]
+2024-08-08 17:04:55.010 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add new patient details whose name is Anas and insert a new patient with patient_id 58, FirstName 'sanju', LastName 'joy', Gender 'Male', DOB 01/01/2000, Height 145, Weight 72, Insurance type Private, Policy Number 123456789, Medical Record 741258963, Hospital Record DL123456
+2024-08-08 17:04:57.984 | DEBUG    | main:validate:102 - ["INSERT INTO patientinfo (patient_id, FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES (58, 'sanju', 'joy', 'Male', '2000-01-01', 145, 72, 'Private', '123456789', '741258963', 'DL123456')"]
+2024-08-08 17:04:58.024 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'FirstName': 'sanju', 'LastName': 'joy', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456'}
+2024-08-08 17:04:58.026 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'FirstName': 'sanju', 'LastName': 'joy', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 17:04:58.026 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:05:06.876 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Add new patient details whose name is Anas and insert a new patient with patient_id 58, FirstName 'sanju', LastName 'joy', Gender 'Male', DOB 01/01/2000, Height 145, Weight 72, Insurance type Private, Policy Number 123456789, Medical Record 741258963, Hospital Record DL123456
+2024-08-08 17:05:09.819 | DEBUG    | main:validate:102 - ["INSERT INTO patientinfo (patient_id, FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES (58, 'sanju', 'joy', 'Male', '2000-01-01', 145, 72, 'Private', '123456789', '741258963', 'DL123456')"]
+2024-08-08 17:05:09.868 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'FirstName': 'sanju', 'LastName': 'joy', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456'}
+2024-08-08 17:05:09.871 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'FirstName': 'sanju', 'LastName': 'joy', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 17:05:09.872 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:06:17.711 | INFO     | main:connect_db:47 - Connecting to database
+2024-08-08 17:06:18.974 | INFO     | main:connect_db:49 - Connected to database
+2024-08-08 17:06:54.028 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: insert a new patient with FirstName 'sanju', LastName 'PAL', Gender 'Male', DOB 01/01/2000, Height 145, Weight 72, Insurance type Gov, Policy Number 123456789, Medical Record 741258963, Hospital Record DL123456
+2024-08-08 17:06:57.365 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('sanju', 'PAL', 'Male', '2000-01-01', 145, 72, 'Gov', '123456789', '741258963', 'DL123456')", '```']
+2024-08-08 17:06:57.660 | DEBUG    | chains:validate_query:267 - {'FirstName': 'sanju', 'LastName': 'PAL', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Gov', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456'}
+2024-08-08 17:06:57.666 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 17:06:57.668 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'InsuranceType', 'type': "Input should be 'Private', 'Medicare', 'Medicaid' or 'VA'", 'tablename_for_hint': 'INSERT'}]
+2024-08-08 17:07:15.259 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: insert a new patient with FirstName 'sanju', LastName 'PAL', Gender 'Male', DOB 01/01/2000, Height 145, Weight 72, Insurance type Private, Policy Number 123456789, Medical Record 741258963, Hospital Record DL123456
+2024-08-08 17:07:18.475 | DEBUG    | main:validate:102 - ["INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('sanju', 'PAL', 'Male', '2000-01-01', 145, 72, 'Private', '123456789', '741258963', 'DL123456')"]
+2024-08-08 17:07:18.764 | DEBUG    | chains:validate_query:267 - {'FirstName': 'sanju', 'LastName': 'PAL', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456'}
+2024-08-08 17:07:18.767 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'sanju', 'LastName': 'PAL', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 17:07:18.767 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:07:24.231 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: insert a new patient with FirstName 'sanju', LastName 'PAL', Gender 'Male', DOB 01/01/2000, Height 145, Weight 72, Insurance type Private, Policy Number 123456789, Medical Record 741258963, Hospital Record DL123456
+2024-08-08 17:07:27.147 | DEBUG    | main:validate:102 - ["INSERT INTO patientinfo (FirstName, LastName, Gender, DateOfBirth, Height, Weight, InsuranceType, PolicyNumber, MedicalRecord, HospitalRecord)  VALUES ('sanju', 'PAL', 'Male', '2000-01-01', 145, 72, 'Private', '123456789', '741258963', 'DL123456')"]
+2024-08-08 17:07:27.203 | DEBUG    | chains:validate_query:267 - {'FirstName': 'sanju', 'LastName': 'PAL', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456'}
+2024-08-08 17:07:27.205 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'FirstName': 'sanju', 'LastName': 'PAL', 'Gender': 'Male', 'DateOfBirth': '2000-01-01', 'Height': '145', 'Weight': '72', 'InsuranceType': 'Private', 'PolicyNumber': '123456789', 'MedicalRecord': '741258963', 'HospitalRecord': 'DL123456', 'table_name_for_reference': 'PatientInfo'}]
+2024-08-08 17:07:27.205 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:08:41.424 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - New Patient with info: insert a new case setup SSEP Data for the patient id 57 where his neck electrode is electrode b, upper cortical is 0
+2024-08-08 17:08:43.825 | DEBUG    | main:validate:102 - ["INSERT INTO case_setup_ssep (patient_id, Neck_Electrode, Upper_Cortical) VALUES (57, 'electrode b', 0)"]
+2024-08-08 17:08:43.866 | DEBUG    | chains:validate_query:267 - {'patient_id': '57', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0'}
+2024-08-08 17:08:43.868 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '57', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0', 'table_name_for_reference': 'Case_setup_SSEP'}]
+2024-08-08 17:08:43.868 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:08:48.526 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - New Patient with info: insert a new case setup SSEP Data for the patient id 57 where his neck electrode is electrode b, upper cortical is 0 and New Patient with info: yes
+2024-08-08 17:08:51.382 | DEBUG    | main:validate:102 - ["INSERT INTO case_setup_ssep (patient_id, Neck_Electrode, Upper_Cortical) VALUES (57, 'electrode b', 0)"]
+2024-08-08 17:08:51.458 | DEBUG    | chains:validate_query:267 - {'patient_id': '57', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0'}
+2024-08-08 17:08:51.459 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '57', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0', 'table_name_for_reference': 'Case_setup_SSEP'}]
+2024-08-08 17:08:51.459 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:08:51.486 | ERROR    | chains:evaluate_result:103 - (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`acr`.`case_setup_ssep`, CONSTRAINT `Case_setup_SSEP` FOREIGN KEY (`patient_id`) REFERENCES `patientinfo` (`patient_id`) ON DELETE CASCADE)
+[SQL: INSERT INTO case_setup_ssep (patient_id, Neck_Electrode, Upper_Cortical) VALUES ('57','electrode b','0');]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-08-08 17:08:59.938 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - New Patient with info: insert a new case setup SSEP Data for the patient id 57 where his neck electrode is electrode b, upper cortical is 0 and New Patient with info: yes
+2024-08-08 17:09:02.458 | DEBUG    | main:validate:102 - ["INSERT INTO case_setup_ssep (patient_id, Neck_Electrode, Upper_Cortical) VALUES (57, 'electrode b', 0)"]
+2024-08-08 17:09:02.488 | DEBUG    | chains:validate_query:267 - {'patient_id': '57', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0'}
+2024-08-08 17:09:02.490 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '57', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0', 'table_name_for_reference': 'Case_setup_SSEP'}]
+2024-08-08 17:09:02.490 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:09:02.497 | ERROR    | chains:evaluate_result:103 - (mysql.connector.errors.IntegrityError) 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`acr`.`case_setup_ssep`, CONSTRAINT `Case_setup_SSEP` FOREIGN KEY (`patient_id`) REFERENCES `patientinfo` (`patient_id`) ON DELETE CASCADE)
+[SQL: INSERT INTO case_setup_ssep (patient_id, Neck_Electrode, Upper_Cortical) VALUES ('57','electrode b','0');]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-08-08 17:09:39.603 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - New Patient with info: insert a new case setup SSEP Data for the patient id 58 where his neck electrode is electrode b, upper cortical is 0
+2024-08-08 17:09:42.319 | DEBUG    | main:validate:102 - ["INSERT INTO case_setup_ssep (patient_id, Neck_Electrode, Upper_Cortical) VALUES (58, 'electrode b', 0)"]
+2024-08-08 17:09:42.358 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0'}
+2024-08-08 17:09:42.358 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0', 'table_name_for_reference': 'Case_setup_SSEP'}]
+2024-08-08 17:09:42.360 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:09:49.185 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: New Patient with info: insert a new case setup SSEP Data for the patient id 58 where his neck electrode is electrode b, upper cortical is 0
+2024-08-08 17:09:51.681 | DEBUG    | main:validate:102 - ["```sql INSERT INTO case_setup_ssep (patient_id, Neck_Electrode, Upper_Cortical)  VALUES (58, 'electrode b', 0)", '```']
+2024-08-08 17:09:51.726 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0'}
+2024-08-08 17:09:51.728 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'Neck_Electrode': 'electrode b', 'Upper_Cortical': '0', 'table_name_for_reference': 'Case_setup_SSEP'}]
+2024-08-08 17:09:51.729 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:10:51.117 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Insert a medical history note for the new patient with patient ID 58. The note should state that the patient has a history of back pain and an allergy to spicy foods.
+2024-08-08 17:10:54.068 | DEBUG    | main:validate:102 - ["INSERT INTO medical_history_note (patient_id, note) VALUES (58, 'The patient has a history of back pain and an allergy to spicy foods.')"]
+2024-08-08 17:10:54.110 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'note': 'The patient has a history of back pain and an allergy to spicy foods.'}
+2024-08-08 17:10:54.112 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'note': 'The patient has a history of back pain and an allergy to spicy foods.', 'table_name_for_reference': 'medical_history_Note'}]
+2024-08-08 17:10:54.115 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:10:59.432 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Insert a medical history note for the new patient with patient ID 58. The note should state that the patient has a history of back pain and an allergy to spicy foods. Also, confirm the new patient information.
+2024-08-08 17:11:02.208 | DEBUG    | main:validate:102 - ["```sql INSERT INTO medical_history_note (patient_id, note) VALUES (58, 'Patient has a history of back pain and an allergy to spicy foods')", 'SELECT * FROM patientinfo WHERE patient_id = 58 LIMIT 5', '```']
+2024-08-08 17:11:02.262 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'note': 'Patient has a history of back pain and an allergy to spicy foods'}
+2024-08-08 17:11:02.263 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'note': 'Patient has a history of back pain and an allergy to spicy foods', 'table_name_for_reference': 'medical_history_Note'}]
+2024-08-08 17:11:02.264 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:11:02.267 | DEBUG    | api:insert_medical_history:131 - 'INTO' is not in list
+2024-08-08 17:11:02.267 | INFO     | api:insert_medical_history:132 - Reconnecting DB
+2024-08-08 17:12:08.207 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Insert a medical history note for the new patient with patient ID 58. The note should state that the patient has a history of back pain and an allergy to spicy foods.
+2024-08-08 17:12:11.458 | DEBUG    | main:validate:102 - ["INSERT INTO medical_history_note (patient_id, note)  VALUES (58, 'The patient has a history of back pain and an allergy to spicy foods.')"]
+2024-08-08 17:12:11.515 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'note': 'The patient has a history of back pain and an allergy to spicy foods.'}
+2024-08-08 17:12:11.516 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'note': 'The patient has a history of back pain and an allergy to spicy foods.', 'table_name_for_reference': 'medical_history_Note'}]
+2024-08-08 17:12:11.517 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:12:16.405 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Insert a medical history note for the new patient with patient ID 58. The note should state that the patient has a history of back pain and an allergy to spicy foods.
+2024-08-08 17:12:19.212 | DEBUG    | main:validate:102 - ["INSERT INTO medical_history_note (patient_id, note) VALUES (58, 'The patient has a history of back pain and an allergy to spicy foods.')"]
+2024-08-08 17:12:19.260 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'note': 'The patient has a history of back pain and an allergy to spicy foods.'}
+2024-08-08 17:12:19.262 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'note': 'The patient has a history of back pain and an allergy to spicy foods.', 'table_name_for_reference': 'medical_history_Note'}]
+2024-08-08 17:12:19.263 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:13:05.368 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Insert a new medical history autonomic data for the patient id 58 where bowel bladder changes is 1, burning pain is 0, and swollen skin is 1.
+2024-08-08 17:13:07.703 | DEBUG    | main:validate:102 - ['INSERT INTO medical_history_autonomic (patient_id, bowel_bladder_changes, burning_pain, swollen_skin) VALUES (58, 1, 0, 1)']
+2024-08-08 17:13:07.747 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'bowel_bladder_changes': '1', 'burning_pain': '0', 'swollen_skin': '1'}
+2024-08-08 17:13:07.751 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'bowel_bladder_changes': '1', 'burning_pain': '0', 'swollen_skin': '1', 'table_name_for_reference': 'medical_history_Autonomic'}]
+2024-08-08 17:13:07.751 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:13:17.904 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Insert a new medical history autonomic data for the patient id 58 where bowel bladder changes is 1, burning pain is 0, and swollen skin is 1, and New Patient with info: yes.
+2024-08-08 17:13:20.427 | DEBUG    | main:validate:102 - ['```sql INSERT INTO medical_history_autonomic (patient_id, bowel_bladder_changes, burning_pain, swollen_skin)  VALUES (58, 1, 0, 1)', '```']
+2024-08-08 17:13:20.480 | DEBUG    | chains:validate_query:267 - {'patient_id': '58', 'bowel_bladder_changes': '1', 'burning_pain': '0', 'swollen_skin': '1'}
+2024-08-08 17:13:20.483 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = [{'patient_id': '58', 'bowel_bladder_changes': '1', 'burning_pain': '0', 'swollen_skin': '1', 'table_name_for_reference': 'medical_history_Autonomic'}]
+2024-08-08 17:13:20.484 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields []
+2024-08-08 17:14:27.631 | DEBUG    | main:log:212 - Question : How many patient IDs are there in the patient info for new patients?
+2024-08-08 17:14:27.632 | DEBUG    | main:log:213 - Query : SELECT COUNT(patient_id) AS total_patient_ids FROM patientinfo;
+2024-08-08 17:14:27.633 | DEBUG    | main:log:214 - Result : ["[{'total_patient_ids': 57}]"]
+2024-08-08 17:15:14.976 | DEBUG    | main:log:212 - Question : How many new patient IDs have the first name Rajesh in the patient info?
+2024-08-08 17:15:14.976 | DEBUG    | main:log:213 - Query : SELECT COUNT(patient_id) AS new_patient_ids
+FROM patientinfo
+WHERE FirstName = 'Rajesh';
+2024-08-08 17:15:14.977 | DEBUG    | main:log:214 - Result : ["[{'new_patient_ids': 41}]"]
+2024-08-08 17:15:39.475 | DEBUG    | main:log:212 - Question : How many new patients with private insurance are there in the patient info?
+2024-08-08 17:15:39.477 | DEBUG    | main:log:213 - Query : SELECT COUNT(*) AS new_private_insurance_patients
+FROM patientinfo
+WHERE InsuranceType = 'Private';
+2024-08-08 17:15:39.478 | DEBUG    | main:log:214 - Result : ["[{'new_private_insurance_patients': 27}]"]
+2024-08-08 17:16:39.886 | DEBUG    | main:log:212 - Question : What is the medical history for the new patient with patient ID 54?
+2024-08-08 17:16:39.887 | DEBUG    | main:log:213 - Query : SELECT * FROM medical_history_autonomic WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_comorbidities WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_diagnosis WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_implants WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_motorfunction WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_note WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_seizures WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_surgeries WHERE patient_id = 54 LIMIT 5;
+
+SELECT * FROM medical_history_symptoms WHERE patient_id = 54 LIMIT 5;
+2024-08-08 17:16:39.889 | DEBUG    | main:log:214 - Result : ['', '', '', '', '', '', '', '', '']
+2024-08-08 17:17:34.040 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Query: and New Patient with info: insert patient information for patient ID 54, Patient is undergoing an L5-S1 lumbar surgery, the case is at West Windsor Hospital and the DOS is today. The case will start at 10am EST and be approx. 4 hours. The surgeon's name is Dr. Delgato, and the anesthesiologist is Dr. Karapal, the reader will be Dr. Gole. Tam the SNP All Fartget, and there will be no secondary SNP.
+2024-08-08 17:17:37.541 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (54, 'L5-S1 lumbar surgery', 'West Windsor Hospital', CURDATE(), '10:00:00', '04:00:00', 'Dr. Karapal', 'Dr. Gole', 'Tam the SNP All Fartget', NULL, 'Dr. Delgato')", '```']
+2024-08-08 17:17:37.595 | DEBUG    | chains:validate_query:267 - {'patient_id': '54', 'Procedure_Name': 'L5-S1 lumbar surgery', 'Hospital': 'West Windsor Hospital', 'Date_of_Service': 'CURDATE', 'Start_Time': '10:00:00', 'Duration': '04:00:00', 'Anesthesiologist': 'Dr. Karapal', 'Reader': 'Dr. Gole', 'SNP1': 'Tam the SNP All Fartget', 'Surgeon': 'Dr. Delgato'}
+2024-08-08 17:17:37.596 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 17:17:37.597 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'SNP2', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 17:17:48.891 | DEBUG    | langchain_core.runnables.config:call_func_with_variable_args:380 - Refined Query: Insert patient information for patient ID 54. The patient is undergoing an L5-S1 lumbar surgery at West Windsor Hospital. The date of surgery (DOS) is today, starting at 10am EST and expected to last approximately 4 hours. The surgeon's name is Dr. Delgato, the anesthesiologist is Dr. Karapal, and the reader will be Dr. Gole. The SNP is Tam All Fartget, and there will be no secondary SNP.
+2024-08-08 17:17:53.840 | DEBUG    | main:validate:102 - ["```sql INSERT INTO patientinfo_extension (patient_id, Procedure_Name, Hospital, Date_of_Service, Start_Time, Duration, Anesthesiologist, Reader, SNP1, SNP2, Surgeon)  VALUES (54, 'L5-S1 lumbar surgery', 'West Windsor Hospital', CURDATE(), '10:00:00', '04:00:00', 'Dr. Karapal', 'Dr. Gole', 'Tam All Fartget', NULL, 'Dr. Delgato')", '```']
+2024-08-08 17:17:53.891 | DEBUG    | chains:validate_query:267 - {'patient_id': '54', 'Procedure_Name': 'L5-S1 lumbar surgery', 'Hospital': 'West Windsor Hospital', 'Date_of_Service': 'CURDATE', 'Start_Time': '10:00:00', 'Duration': '04:00:00', 'Anesthesiologist': 'Dr. Karapal', 'Reader': 'Dr. Gole', 'SNP1': 'Tam All Fartget', 'Surgeon': 'Dr. Delgato'}
+2024-08-08 17:17:53.893 | DEBUG    | chains:validate_insert_query_chain:336 - Provided Fields = []
+2024-08-08 17:17:53.894 | DEBUG    | chains:validate_insert_query_chain:337 - Missing Fields [{'field': 'SNP2', 'type': 'Field required', 'tablename_for_hint': 'INSERT'}]
+2024-08-08 17:18:57.746 | DEBUG    | main:log:212 - Question : With context to patient id 2, show me patient CranialMuscles info.
+2024-08-08 17:18:57.747 | DEBUG    | main:log:213 - Query : SELECT * FROM case_setup_cranialmuscles WHERE patient_id = 2 LIMIT 5;
+2024-08-08 17:18:57.748 | DEBUG    | main:log:214 - Result : ["[{'id': 2, 'patient_id': 2, 'III_IR': 'right', 'IV_SUP_OBLIQUE': 'left', 'V_MASSETER': 'bilateral', 'VI_LAT': 'right', 'VII_FRONTALS': 'left', 'VII_ZYGOMATIC': 'bilateral', 'VII_ORB': 'right', 'VII_BUCCAL': 'left', 'VII_MANDIBULAR': 'bilateral', 'VII_MENTALIS': 'right', 'VII_CERVICAL': 'left', 'VII_PLATYSMA': 'bilateral', 'CIX_STYLO': 'right', 'X_VCOCALIS': 'left', 'XI_SCM': 'bilateral', 'XII_TONGUE': 'right', 'OTHER': 'left'}]"]
+2024-08-08 17:20:00.538 | DEBUG    | main:log:212 - Question : With context to patient ID 2, share their MEP muscles information.
+2024-08-08 17:20:00.538 | DEBUG    | main:log:213 - Query : SELECT 
+    id, 
+    patient_id, 
+    Trap, 
+    DELTOID, 
+    BICEP, 
+    BR, 
+    TRICEPS, 
+    FCR_FCU, 
+    HAND, 
+    PSOAS, 
+    ADDUCTOR, 
+    QUADS, 
+    EHL, 
+    TA, 
+    HAMSTRING, 
+    GASTROC, 
+    FOOT, 
+    INTERCOSTAL, 
+    ABS, 
+    U_ABS, 
+    L_ABS, 
+    RLN, 
+    AN_SPH, 
+    OTHER1, 
+    OTHER2 
+FROM 
+    case_setup_mep_muscles 
+WHERE 
+    patient_id = 2
+LIMIT 5;
+2024-08-08 17:20:00.543 | DEBUG    | main:log:214 - Result : ['']
+2024-08-08 17:20:43.606 | DEBUG    | main:log:212 - Question : With context to patient ID 2, show the case setup modality for this patient.
+2024-08-08 17:20:43.608 | DEBUG    | main:log:213 - Query : SELECT * FROM case_setup_modalties WHERE patient_id = 2 LIMIT 5;
+2024-08-08 17:20:43.608 | DEBUG    | main:log:214 - Result : ["[{'id': 2, 'patient_id': 2, 'EEG': 0, 'ECOG': 1, 'EMG': 0, 'MEP': 1, 'SSEP': 0, 'T04': 1, 'Trig_EMG': 1, 'CN_EMG': 0, 'Others': 0}]"]
+2024-08-08 17:21:19.050 | DEBUG    | main:log:212 - Question : What is the personal info extension for the new patient with patient ID 2?
+2024-08-08 17:21:19.050 | DEBUG    | main:log:213 - Query : SELECT * FROM patientinfo_extension WHERE patient_id = 2 LIMIT 5;
+2024-08-08 17:21:19.051 | DEBUG    | main:log:214 - Result : ['']
+2024-08-08 17:21:38.601 | DEBUG    | main:log:212 - Question : What is the personal info extension for the new patient with patient ID 25?
+2024-08-08 17:21:38.603 | DEBUG    | main:log:213 - Query : SELECT * FROM patientinfo_extension WHERE patient_id = 25 LIMIT 5;
+2024-08-08 17:21:38.605 | DEBUG    | main:log:214 - Result : ['']
+2024-08-08 17:22:00.676 | DEBUG    | main:log:212 - Question : What is the personal info extension for the new patient with patient ID 10?
+2024-08-08 17:22:00.677 | DEBUG    | main:log:213 - Query : SELECT * 
+FROM patientinfo_extension 
+WHERE patient_id = 10 
+LIMIT 5;
+2024-08-08 17:22:00.677 | DEBUG    | main:log:214 - Result : ["[{'EMR_ID': 5, 'patient_id': 10, 'Procedure_Name': 'Discectomy', 'Hospital': 'Harborview Medical Center', 'Date_of_Service': datetime.date(2024, 3, 20), 'Start_Time': datetime.timedelta(seconds=37800), 'Duration': datetime.timedelta(seconds=8100), 'Anesthesiologist': 'Dr. Miller', 'Reader': 'Reader D', 'SNP1': 'SNP1_Name', 'SNP2': 'SNP2_Name5', 'Surgeon': 'Dr. Black'}]"]
+2024-08-08 17:32:17.808 | DEBUG    | main:log:212 - Question : How many new patients with private insurance are there in the patient info for the patient with ID 10?
+2024-08-08 17:32:17.809 | DEBUG    | main:log:213 - Query : SELECT COUNT(*) AS new_private_insurance_patients
+FROM patientinfo
+WHERE InsuranceType = 'Private' AND patient_id = 10
+LIMIT 5;
+2024-08-08 17:32:17.809 | DEBUG    | main:log:214 - Result : ["[{'new_private_insurance_patients': 0}]"]
+2024-08-08 17:32:41.645 | DEBUG    | main:log:212 - Question : How many new patients with private insurance are there in the patient info?
+2024-08-08 17:32:41.646 | DEBUG    | main:log:213 - Query : SELECT COUNT(*) AS new_private_insurance_patients
+FROM patientinfo
+WHERE InsuranceType = 'Private';
+2024-08-08 17:32:41.647 | DEBUG    | main:log:214 - Result : ["[{'new_private_insurance_patients': 27}]"]
+2024-08-08 17:33:10.672 | DEBUG    | main:log:212 - Question : How many new patients with private insurance are there in the patient info, and what are their patient IDs?
+2024-08-08 17:33:10.674 | DEBUG    | main:log:213 - Query : SELECT COUNT(*) AS new_patients, GROUP_CONCAT(patient_id) AS patient_ids
+FROM patientinfo
+WHERE InsuranceType = 'Private';
+2024-08-08 17:33:10.674 | DEBUG    | main:log:214 - Result : ["[{'new_patients': 27, 'patient_ids': '1,5,9,13,15,21,22,26,27,28,30,37,42,43,44,46,47,48,49,50,58,123,314,789,790,791,792'}]"]

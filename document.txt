@@ -1,0 +1,178 @@
+# Hospital Database Schema Explanation Document
+
+## Overview
+This document provides a detailed explanation of the database schema for a hospital system. The schema includes various tables that store information about patients, cranial muscles, EEG channels, EMG muscles, MEP muscles, modalities, SSEP, SSEP nerves, and MEP settings. Each table is described with its columns and their abbreviations.
+
+## Tables
+
+1. `Case_setup_CranialMuscles` - No abbreviation
+2. `Case_setup_EEG_channels` - EEG: Electroencephalography
+3. `Case_setup_EMG_Muscles` - EMG: Electromyography
+4. `Case_setup_MEP_Muscles` - MEP: Motor Evoked Potentials
+5. `Case_setup_Modality` - No abbreviation
+6. `Case_setup_SSEP` - SSEP: Somatosensory Evoked Potentials
+7. `Case_setup_SSEP_Nerves` - SSEP: Somatosensory Evoked Potentials
+8. `Case_setup_MEP_Settings` - MEP: Motor Evoked Potentials
+
+
+### 1. `PatientInfo`
+Stores basic information about patients.
+
+- **patient_id**: Primary Key, auto-incrementing integer.
+- **FirstName**: VARCHAR(50), patient's first name.
+- **LastName**: VARCHAR(50), patient's last name.
+- **Gender**: ENUM('Male', 'Female', 'Other'), patient's gender.
+- **DateOfBirth**: DATE, patient's date of birth.
+- **Height**: INT, patient's height in centimeters.
+- **Weight**: INT, patient's weight in kilograms.
+- **InsuranceType**: ENUM('Private', 'Medicare', 'Medicaid', 'VA'), type of insurance the patient has.
+- **PolicyNumber**: VARCHAR(50), insurance policy number.
+- **MedicalRecord**: VARCHAR(50), medical record number.
+- **HospitalRecord**: VARCHAR(50), hospital record number.
+
+### 2. `Case_setup_CranialMuscles`
+Stores information about cranial muscle involvement for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **III_IR**: ENUM('left', 'right', 'bilateral'), Cranial nerve III (Inferior Rectus) involvement.
+- **IV_SUP_OBLIQUE**: ENUM('left', 'right', 'bilateral'), Cranial nerve IV (Superior Oblique) involvement.
+- **V_MASSETER**: ENUM('left', 'right', 'bilateral'), Cranial nerve V (Masseter) involvement.
+- **VI_LAT**: ENUM('left', 'right', 'bilateral'), Cranial nerve VI (Lateral Rectus) involvement.
+- **VII_FRONTALS**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Frontalis) involvement.
+- **VII_ZYGOMATIC**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Zygomatic) involvement.
+- **VII_ORB**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Orbicularis) involvement.
+- **VII_BUCCAL**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Buccal) involvement.
+- **VII_MANDIBULAR**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Mandibular) involvement.
+- **VII_MENTALIS**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Mentalis) involvement.
+- **VII_CERVICAL**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Cervical) involvement.
+- **VII_PLATYSMA**: ENUM('left', 'right', 'bilateral'), Cranial nerve VII (Platysma) involvement.
+- **CIX_STYLO**: ENUM('left', 'right', 'bilateral'), Cranial nerve IX (Stylohyoid) involvement.
+- **X_VCOCALIS**: ENUM('left', 'right', 'bilateral'), Cranial nerve X (Vocalis) involvement.
+- **XI_SCM**: ENUM('left', 'right', 'bilateral'), Cranial nerve XI (Sternocleidomastoid) involvement.
+- **XII_TONGUE**: ENUM('left', 'right', 'bilateral'), Cranial nerve XII (Tongue) involvement.
+- **OTHER**: ENUM('left', 'right', 'bilateral'), involvement of other muscles.
+
+### 3. `Case_setup_EEG_channels`
+Stores EEG channel setup information for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **pre_set_EEG**: TEXT, predefined EEG settings.
+- **Input_positive**: TEXT, positive input channels.
+- **Input_negative**: TEXT, negative input channels.
+
+### 4. `Case_setup_EMG_Muscles`
+Stores EMG muscle setup information for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **Trap**: ENUM('left', 'right', 'bilateral'), Trapezius muscle involvement.
+- **DELTOID**: ENUM('left', 'right', 'bilateral'), Deltoid muscle involvement.
+- **BICEP**: ENUM('left', 'right', 'bilateral'), Biceps muscle involvement.
+- **BR**: ENUM('left', 'right', 'bilateral'), Brachioradialis muscle involvement.
+- **TRICEPS**: ENUM('left', 'right', 'bilateral'), Triceps muscle involvement.
+- **FCR_FCU**: ENUM('left', 'right', 'bilateral'), Flexor carpi radialis and ulnaris muscles involvement.
+- **HAND**: ENUM('left', 'right', 'bilateral'), Hand muscles involvement.
+- **PSOAS**: ENUM('left', 'right', 'bilateral'), Psoas muscle involvement.
+- **ADDUCTOR**: ENUM('left', 'right', 'bilateral'), Adductor muscles involvement.
+- **QUADS**: ENUM('left', 'right', 'bilateral'), Quadriceps muscles involvement.
+- **EHL**: ENUM('left', 'right', 'bilateral'), Extensor hallucis longus muscle involvement.
+- **TA**: ENUM('left', 'right', 'bilateral'), Tibialis anterior muscle involvement.
+- **HAMSTRING**: ENUM('left', 'right', 'bilateral'), Hamstring muscles involvement.
+- **GASTROC**: ENUM('left', 'right', 'bilateral'), Gastrocnemius muscle involvement.
+- **FOOT**: ENUM('left', 'right', 'bilateral'), Foot muscles involvement.
+- **INTERCOSTAL**: ENUM('left', 'right', 'bilateral'), Intercostal muscles involvement.
+- **ABS**: ENUM('left', 'right', 'bilateral'), Abdominal muscles involvement.
+- **U_ABS**: ENUM('left', 'right', 'bilateral'), Upper abdominal muscles involvement.
+- **L_ABS**: ENUM('left', 'right', 'bilateral'), Lower abdominal muscles involvement.
+- **RLN**: ENUM('left', 'right', 'bilateral'), Recurrent laryngeal nerve involvement.
+- **AN_SPH**: ENUM('left', 'right', 'bilateral'), Anal sphincter involvement.
+- **OTHER1**: ENUM('left', 'right', 'bilateral'), Other muscles involvement (first additional).
+- **OTHER2**: ENUM('left', 'right', 'bilateral'), Other muscles involvement (second additional).
+
+### 5. `Case_setup_MEP_Muscles`
+Stores MEP muscle setup information for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **Trap**: ENUM('left', 'right', 'bilateral'), Trapezius muscle involvement.
+- **DELTOID**: ENUM('left', 'right', 'bilateral'), Deltoid muscle involvement.
+- **BICEP**: ENUM('left', 'right', 'bilateral'), Biceps muscle involvement.
+- **BR**: ENUM('left', 'right', 'bilateral'), Brachioradialis muscle involvement.
+- **TRICEPS**: ENUM('left', 'right', 'bilateral'), Triceps muscle involvement.
+- **FCR_FCU**: ENUM('left', 'right', 'bilateral'), Flexor carpi radialis and ulnaris muscles involvement.
+- **HAND**: ENUM('left', 'right', 'bilateral'), Hand muscles involvement.
+- **PSOAS**: ENUM('left', 'right', 'bilateral'), Psoas muscle involvement.
+- **ADDUCTOR**: ENUM('left', 'right', 'bilateral'), Adductor muscles involvement.
+- **QUADS**: ENUM('left', 'right', 'bilateral'), Quadriceps muscles involvement.
+- **EHL**: ENUM('left', 'right', 'bilateral'), Extensor hallucis longus muscle involvement.
+- **TA**: ENUM('left', 'right', 'bilateral'), Tibialis anterior muscle involvement.
+- **HAMSTRING**: ENUM('left', 'right', 'bilateral'), Hamstring muscles involvement.
+- **GASTROC**: ENUM('left', 'right', 'bilateral'), Gastrocnemius muscle involvement.
+- **FOOT**: ENUM('left', 'right', 'bilateral'), Foot muscles involvement.
+- **INTERCOSTAL**: ENUM('left', 'right', 'bilateral'), Intercostal muscles involvement.
+- **ABS**: ENUM('left', 'right', 'bilateral'), Abdominal muscles involvement.
+- **U_ABS**: ENUM('left', 'right', 'bilateral'), Upper abdominal muscles involvement.
+- **L_ABS**: ENUM('left', 'right', 'bilateral'), Lower abdominal muscles involvement.
+- **RLN**: ENUM('left', 'right', 'bilateral'), Recurrent laryngeal nerve involvement.
+- **AN_SPH**: ENUM('left', 'right',
+
+ 'bilateral'), Anal sphincter involvement.
+- **OTHER1**: ENUM('left', 'right', 'bilateral'), Other muscles involvement (first additional).
+- **OTHER2**: ENUM('left', 'right', 'bilateral'), Other muscles involvement (second additional).
+
+### 6. `Case_setup_Modality`
+Stores information about modalities used for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **BAER**: ENUM('left', 'right', 'bilateral'), Brainstem auditory evoked response involvement.
+- **SSEP**: ENUM('left', 'right', 'bilateral'), Somatosensory evoked potentials involvement.
+- **tEMG**: ENUM('left', 'right', 'bilateral'), Transcranial EMG involvement.
+- **tcMEP**: ENUM('left', 'right', 'bilateral'), Transcranial motor evoked potentials involvement.
+- **dMEP**: ENUM('left', 'right', 'bilateral'), Direct motor evoked potentials involvement.
+- **EEG**: ENUM('left', 'right', 'bilateral'), Electroencephalogram involvement.
+- **DSC**: ENUM('left', 'right', 'bilateral'), Dorsal column stimulator involvement.
+- **TOF**: ENUM('left', 'right', 'bilateral'), Train-of-four stimulation involvement.
+- **VEP**: ENUM('left', 'right', 'bilateral'), Visual evoked potentials involvement.
+- **ECog**: ENUM('left', 'right', 'bilateral'), Electrocorticography involvement.
+- **EMG**: ENUM('left', 'right', 'bilateral'), Electromyography involvement.
+- **Other1**: ENUM('left', 'right', 'bilateral'), Other modality involvement (first additional).
+- **Other2**: ENUM('left', 'right', 'bilateral'), Other modality involvement (second additional).
+
+### 7. `Case_setup_SSEP`
+Stores SSEP setup information for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **N20**: ENUM('left', 'right', 'bilateral'), N20 response involvement.
+- **N30**: ENUM('left', 'right', 'bilateral'), N30 response involvement.
+- **P37**: ENUM('left', 'right', 'bilateral'), P37 response involvement.
+- **P14**: ENUM('left', 'right', 'bilateral'), P14 response involvement.
+- **SSEP_Level**: VARCHAR(50), level of SSEP involvement.
+
+### 8. `Case_setup_SSEP_Nerves`
+Stores SSEP nerve setup information for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **SSEP_ULNAR**: ENUM('left', 'right', 'bilateral'), Ulnar nerve involvement.
+- **SSEP_MedNerve**: ENUM('left', 'right', 'bilateral'), Median nerve involvement.
+- **SSEP_PostTibNerve**: ENUM('left', 'right', 'bilateral'), Posterior tibial nerve involvement.
+- **SSEP_PerNerve**: ENUM('left', 'right', 'bilateral'), Peroneal nerve involvement.
+
+### 9. `Case_setup_MEP_Settings`
+Stores MEP settings for cases.
+
+- **id**: Primary Key, auto-incrementing integer.
+- **patient_id**: Foreign Key, references `PatientInfo(patient_id)`.
+- **StimulationIntensity**: INT, intensity of stimulation.
+- **StimulationFrequency**: INT, frequency of stimulation.
+- **NumberOfStimulations**: INT, number of stimulations.
+- **PulseWidth**: INT, width of the pulse in microseconds.
+- **TrainInterval**: INT, interval between trains in milliseconds.
+- **AnesthesiaLevel**: VARCHAR(50), level of anesthesia during MEP.
+
+## Conclusion
+This database schema is designed to store comprehensive information about patients and various aspects of their neurological and muscular monitoring. The tables are interconnected through foreign keys, ensuring data integrity and facilitating complex queries to retrieve relevant patient data efficiently.
